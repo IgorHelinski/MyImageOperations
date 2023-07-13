@@ -29,9 +29,20 @@ class Program
                 int blue = pixelColor.B;
                 int gray = (byte)(.299 * red + .587 * green + .114 * blue);
 
+                float _r = (float)red;
+                float _g = (float)green;
+                float _b = (float)blue; 
+
+                decimal r = Math.Round((decimal)(4 * _r / 255)) * (255 / 4);
+                decimal g = Math.Round((decimal)(4 * _g / 255)) * (255 / 4);
+                decimal b = Math.Round((decimal)(4 * _b / 255)) * (255 / 4);
+
+                Color ditherPixel = Color.FromArgb((int)r, (int)g, (int)b);
+                bmp.SetPixel(i, j, ditherPixel);
+
                 // INVERSE
-                Color inversePixel = Color.FromArgb(255 - red, 255 - green, 255 - blue);
-                bmp.SetPixel(i, j, inversePixel);
+                //Color inversePixel = Color.FromArgb(255 - red, 255 - green, 255 - blue);
+                //bmp.SetPixel(i, j, inversePixel);
 
                 // BLACK OR WHITE
                 //if(gray < 128)
