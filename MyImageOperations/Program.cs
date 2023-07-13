@@ -4,6 +4,7 @@ using System.Numerics;
 using System.Collections;
 using System.Drawing.Imaging;
 using System.ComponentModel;
+using System.Diagnostics;
 
 class Program
 {
@@ -15,6 +16,9 @@ class Program
         Bitmap bmpOriginal = new Bitmap(filePath);
         Bitmap bmp = bmpOriginal;
 
+        Stopwatch stopwatch = new Stopwatch();
+        stopwatch.Start();
+
         for (int i = 0; i < bmp.Width; i++)
         {
             for (int j = 0; j < bmp.Height; j++)
@@ -24,13 +28,31 @@ class Program
                 int green = pixelColor.G;
                 int blue = pixelColor.B;
                 int gray = (byte)(.299 * red + .587 * green + .114 * blue);
-                red = gray;
-                green = gray;
-                blue = gray;
 
-                bmp.SetPixel(i, j, Color.FromArgb(red, green, blue));
+                // INVERSE
+                Color inversePixel = Color.FromArgb(255 - red, 255 - green, 255 - blue);
+                bmp.SetPixel(i, j, inversePixel);
+
+                // BLACK OR WHITE
+                //if(gray < 128)
+                //{
+                //    bmp.SetPixel(i, j, Color.FromArgb(0, 0, 0));
+                //}
+                //else if(gray >= 128)
+                //{
+                //    bmp.SetPixel(i, j, Color.FromArgb(255, 255, 255));
+                //}
+
+                // GRAYSCALE
+                //red = gray;
+                //green = gray;
+                //blue = gray;
+                //bmp.SetPixel(i, j, Color.FromArgb(red, green, blue));
             }
         }
+
+        stopwatch.Stop();
+        Console.WriteLine("This took: " + stopwatch.ElapsedMilliseconds.ToString() + " ms");
 
         Console.WriteLine("Please input new file path");
         string savePath = Console.ReadLine();
