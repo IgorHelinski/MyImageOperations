@@ -33,9 +33,9 @@ class Program
                 float _g = (float)green;
                 float _b = (float)blue; 
 
-                decimal r = Math.Round((decimal)(4 * _r / 255)) * (255 / 4);
-                decimal g = Math.Round((decimal)(4 * _g / 255)) * (255 / 4);
-                decimal b = Math.Round((decimal)(4 * _b / 255)) * (255 / 4);
+                decimal r = Math.Round((decimal)(2 * _r / 255)) * (255 / 2);
+                decimal g = Math.Round((decimal)(2 * _g / 255)) * (255 / 2);
+                decimal b = Math.Round((decimal)(2 * _b / 255)) * (255 / 2);
 
                 Color ditherPixel = Color.FromArgb((int)r, (int)g, (int)b);
                 bmp.SetPixel(i, j, ditherPixel);
