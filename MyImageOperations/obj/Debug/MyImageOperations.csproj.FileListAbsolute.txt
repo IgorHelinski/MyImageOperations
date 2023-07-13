@@ -6,3 +6,6 @@ D:\GithubRepos\MyImageOperations\MyImageOperations\MyImageOperations\bin\Debug\M
 D:\GithubRepos\MyImageOperations\MyImageOperations\MyImageOperations\bin\Debug\MyImageOperations.pdb
 D:\GithubRepos\MyImageOperations\MyImageOperations\MyImageOperations\obj\Debug\MyImageOperations.exe
 D:\GithubRepos\MyImageOperations\MyImageOperations\MyImageOperations\obj\Debug\MyImageOperations.pdb
+D:\GithubRepos\MyImageOperations\MyImageOperations\MyImageOperations\bin\Debug\System.Drawing.Common.dll
+D:\GithubRepos\MyImageOperations\MyImageOperations\MyImageOperations\bin\Debug\System.Drawing.Common.xml
+D:\GithubRepos\MyImageOperations\MyImageOperations\MyImageOperations\obj\Debug\MyImageOperations.csproj.CopyComplete

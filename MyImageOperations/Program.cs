@@ -1,12 +1,44 @@
 ﻿using System;
+using System.Drawing;
+using System.Numerics;
 using System.Collections;
+using System.Drawing.Imaging;
+using System.ComponentModel;
 
 class Program
 {
     static void Main()
     {
-        Console.WriteLine("Hello world again!");
-        Console.ReadLine();
+        Console.WriteLine("Hello! Specify path of the image!");
+        string filePath = Console.ReadLine();
+        
+        Bitmap bmpOriginal = new Bitmap(filePath);
+        Bitmap bmp = bmpOriginal;
+
+        for (int i = 0; i < bmp.Width; i++)
+        {
+            for (int j = 0; j < bmp.Height; j++)
+            {
+                Color pixelColor = bmp.GetPixel(i, j);
+                int red = pixelColor.R;
+                int green = pixelColor.G;
+                int blue = pixelColor.B;
+                int gray = (byte)(.299 * red + .587 * green + .114 * blue);
+                red = gray;
+                green = gray;
+                blue = gray;
+
+                bmp.SetPixel(i, j, Color.FromArgb(red, green, blue));
+            }
+        }
+
+        Console.WriteLine("Please input new file path");
+        string savePath = Console.ReadLine();
+
+        bmp.Save(savePath);
+
+        Console.WriteLine("To exit press any key");
+        Console.ReadKey(true);
     }
 }
 
