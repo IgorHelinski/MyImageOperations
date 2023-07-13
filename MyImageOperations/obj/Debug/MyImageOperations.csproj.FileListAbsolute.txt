@@ -1,0 +1,8 @@
+D:\GithubRepos\MyImageOperations\MyImageOperations\MyImageOperations\obj\Debug\MyImageOperations.csproj.AssemblyReference.cache
+D:\GithubRepos\MyImageOperations\MyImageOperations\MyImageOperations\obj\Debug\MyImageOperations.csproj.SuggestedBindingRedirects.cache
+D:\GithubRepos\MyImageOperations\MyImageOperations\MyImageOperations\obj\Debug\MyImageOperations.csproj.CoreCompileInputs.cache
+D:\GithubRepos\MyImageOperations\MyImageOperations\MyImageOperations\bin\Debug\MyImageOperations.exe.config
+D:\GithubRepos\MyImageOperations\MyImageOperations\MyImageOperations\bin\Debug\MyImageOperations.exe
+D:\GithubRepos\MyImageOperations\MyImageOperations\MyImageOperations\bin\Debug\MyImageOperations.pdb
+D:\GithubRepos\MyImageOperations\MyImageOperations\MyImageOperations\obj\Debug\MyImageOperations.exe
+D:\GithubRepos\MyImageOperations\MyImageOperations\MyImageOperations\obj\Debug\MyImageOperations.pdb
