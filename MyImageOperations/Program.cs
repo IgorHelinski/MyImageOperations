@@ -40,15 +40,45 @@ class Program
                 int blue = pixelColor.B;
                 int gray = (byte)(.299 * red + .587 * green + .114 * blue);
 
+                // GRAYSCALE
+                o_r = gray;
+                o_g = gray;
+                o_b = gray;
+                bmp.SetPixel(x, y, Color.FromArgb(red, green, blue));
+
                 // Original colors
-                o_r = red;
-                o_g = green;
-                o_b = blue;
+                //o_r = red;
+                //o_g = green;
+                //o_b = blue;
+
+                // Quantizated colors
+                int quantAmount = 2;
+                int q_r = (quantAmount * o_r / 255) * (255 / quantAmount);
+                int q_g = (quantAmount * o_g / 255) * (255 / quantAmount);
+                int q_b = (quantAmount * o_b / 255) * (255 / quantAmount);
+
+                int clampedR = Clamp(q_r, 0, 255);
+                int clampedG = Clamp(q_g, 0, 255);
+                int clampedB = Clamp(q_b, 0, 255);
+
+                // QUANTIZATION
+                Color ditherPixel = Color.FromArgb(clampedR, clampedG, clampedB);
+                bmp.SetPixel(x, y, ditherPixel);
+
+                // Dither error
+                int errorR = o_r - q_r;
+                int errorG = o_g - q_g;
+                int errorB = o_b - q_b;
+
+                OffsetDither(x + 1, y, bmp, errorR, errorG, errorB, 7);
+                OffsetDither(x - 1, y + 1, bmp, errorR, errorG, errorB, 3);
+                OffsetDither(x, y + 1, bmp, errorR, errorG, errorB, 5);
+                OffsetDither(x + 1, y + 1, bmp, errorR, errorG, errorB, 1);
             }
         }
 
-        Bitmap qBmp = Quantization(bmp);
-        Bitmap dBmp = FloydSteinberg(bmp, qBmp);
+        //Bitmap qBmp = Quantization(bmp);
+        //Bitmap dBmp = FloydSteinberg(bmp, qBmp);
 
         for (int x = 1; x < bmp.Width - 1; x++)
         {
@@ -96,7 +126,7 @@ class Program
         Console.WriteLine("Please input new file path");
         string savePath = Console.ReadLine();
 
-        dBmp.Save(savePath);
+        bmp.Save(savePath);
 
         Console.WriteLine("To exit press any key");
         Console.ReadKey(true);
