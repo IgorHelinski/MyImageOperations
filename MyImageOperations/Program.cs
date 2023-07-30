@@ -21,6 +21,9 @@ class Program
         Bitmap bmpOriginal = new Bitmap(filePath);
         Bitmap bmp = bmpOriginal;
 
+        Console.WriteLine("For color image type: 'color' and for grayscale type: 'gray'");
+        string type = Console.ReadLine();
+
         Stopwatch stopwatch = new Stopwatch();
         stopwatch.Start();
 
@@ -40,19 +43,31 @@ class Program
                 int blue = pixelColor.B;
                 int gray = (byte)(.299 * red + .587 * green + .114 * blue);
 
-                // GRAYSCALE
-                o_r = gray;
-                o_g = gray;
-                o_b = gray;
-                bmp.SetPixel(x, y, Color.FromArgb(red, green, blue));
-
-                // Original colors
-                //o_r = red;
-                //o_g = green;
-                //o_b = blue;
+                if(type == "gray")
+                {
+                    // GRAYSCALE
+                    o_r = gray;
+                    o_g = gray;
+                    o_b = gray;
+                    //bmp.SetPixel(x, y, Color.FromArgb(red, green, blue));
+                }
+                else if(type == "color")
+                {
+                    // Original colors
+                    o_r = red;
+                    o_g = green;
+                    o_b = blue;
+                }
+                else
+                {
+                    // Original colors
+                    o_r = red;
+                    o_g = green;
+                    o_b = blue;
+                }
 
                 // Quantizated colors
-                int quantAmount = 2;
+                int quantAmount = 1;
                 int q_r = (quantAmount * o_r / 255) * (255 / quantAmount);
                 int q_g = (quantAmount * o_g / 255) * (255 / quantAmount);
                 int q_b = (quantAmount * o_b / 255) * (255 / quantAmount);
