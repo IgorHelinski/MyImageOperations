@@ -8,16 +8,20 @@ Here are some examples (due to downscaling, press on an image to see it in fulls
 <br>
 <figure>
   <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/7e6caa94-c86d-415d-baae-de325987281d" width="40%" height="40%">
-  <figcaption>Original image</figcaption>
+  <figcaption>Original</figcaption>
 </figure>
 <figure>
   <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/dacaa92f-917a-4b2d-8457-543fa68d316d" width="40%" height="40%">
-  <figcaption>Original image</figcaption>
+  <figcaption>Original</figcaption>
 </figure>
 <br>
 <figure>
   <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/84785c05-cc73-484f-994e-96eccacf7250" width="40%" height="40%">
-  <figcaption>Quantization amount of 3 - Color</figcaption>
+  <figcaption>Quant of 3</figcaption>
+</figure>
+<figure>
+  <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/6ac8478a-60f2-4130-97ae-05c579f9791d" width="40%" height="40%">
+  <figcaption>Quant of 3</figcaption>
 </figure>
 <br>
 <figure>
