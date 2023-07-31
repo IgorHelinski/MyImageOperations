@@ -7,11 +7,11 @@ I used Floyd-Steinberg dithering alghorithm that uses error diffusion as its dit
 Here are some examples (due to downscaling, press on an image to see it in fullscreen):
 <br>
 <figure>
-  <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/7e6caa94-c86d-415d-baae-de325987281d" width="30%" height="30%">
+  <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/7e6caa94-c86d-415d-baae-de325987281d" width="40%" height="40%">
   <figcaption>Original image</figcaption>
 </figure>
 <figure>
-  <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/dacaa92f-917a-4b2d-8457-543fa68d316d" width="30%" height="30%">
+  <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/dacaa92f-917a-4b2d-8457-543fa68d316d" width="40%" height="40%">
   <figcaption>Original image</figcaption>
 </figure>
 <br>
