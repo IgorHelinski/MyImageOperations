@@ -26,11 +26,21 @@ Here are some examples (due to downscaling, press on an image to see it in fulls
 <br>
 <figure>
   <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/2ea2a958-2fd6-493f-8a39-7cc3df5f007b" width="40%" height="40%">
-  <figcaption>Quantization amount of 2 - Color</figcaption>
+  <figcaption>Quant of 2</figcaption>
+</figure>
+<figure>
+  <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/5f44149f-f01a-476b-a06d-3df7e1b50785" width="40%" height="40%">
+  <figcaption>Quant of 2</figcaption>
 </figure>
 <figure>
   <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/e58fdd76-66fa-4ef0-9016-43baa2ea53fd" width="40%" height="40%">
-  <figcaption>Quantization amount of 1 - Color</figcaption>
+  <figcaption>Quant of 1</figcaption>
+</figure>
+<figure>
+  <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/14a82dd2-8f51-4566-ae66-0e54eb24154a" width="40%" height="40%">
+  <figcaption>Quant of 1</figcaption>
 </figure>
 <br>
+
+
 
