@@ -10,6 +10,10 @@ Here are some examples (due to downscaling, press on an image to see it in fulls
   <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/7e6caa94-c86d-415d-baae-de325987281d" width="40%" height="40%">
   <figcaption>Original image - Color</figcaption>
 </figure>
+<figure>
+  <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/7e6caa94-c86d-415d-baae-de325987281d" width="40%" height="40%">
+  <figcaption>Original image - Grayscale</figcaption>
+</figure>
 <br>
 <figure>
   <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/84785c05-cc73-484f-994e-96eccacf7250" width="40%" height="40%">
