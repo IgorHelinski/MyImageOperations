@@ -8,10 +8,12 @@ Here are some examples (due to downscaling, press on an image to see it in fulls
 <br>
 <figure>
   <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/7e6caa94-c86d-415d-baae-de325987281d" width="40%" height="40%">
+  <br>
   <figcaption>Original image - Color</figcaption>
 </figure>
 <figure>
   <img src="https://github.com/IgorHelinski/MyImageOperations/assets/70145364/7e6caa94-c86d-415d-baae-de325987281d" width="40%" height="40%">
+  <br>
   <figcaption>Original image - Grayscale</figcaption>
 </figure>
 <br>
